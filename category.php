@@ -15,7 +15,7 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 	}
     if($type=='delete'){
 		$id=get_safe_value($con,$_GET['id']);
-		$delete_sql="delete from category where id='$id'";
+		$delete_sql="delete from categorys where id='$id'";
 		mysqli_query($con,$delete_sql);
 	}
 }
