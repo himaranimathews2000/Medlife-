@@ -15,7 +15,7 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 	}
     if($type=='delete'){
 		$id=get_safe_value($con,$_GET['id']);
-		$delete_sql="delete from category where id='$id'";
+		$delete_sql="delete from categorys where id='$id'";
 		mysqli_query($con,$delete_sql);
 	}
 }
@@ -28,7 +28,7 @@ $res=mysqli_query($con,$sql);
                   <div class="col-xl-12">
                      <div class="card">
                         <div class="card-body" style="background-color:#ffbdf4;color:black">
-                           <h3 class="box-title">CATEGORIES</h3>
+                           <h3 class="box-title">CATEGORIES </h3>
                             <h5  style="text-align:right;" ><a href="add_to_category.php" style="color:grey" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='grey'">Add Category</a></h5>
                         </div>
                         <div class="card-body--" >
